@@ -1,0 +1,7 @@
+== My Website
+
+This is the repository of the personal website for Jeffrey Snowiss.
+
+Made with the Rails framework and deployed to Heroku. A Bootstrap template was used as a base, and modified to produce the current layout.
+
+Hosted at http://jeffsnowiss.com. Check it out to learn more about me, my projects, and my experience.

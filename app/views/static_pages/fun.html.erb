@@ -1,0 +1,22 @@
+<% provide(:title, "For Fun") %>
+
+<div class="page-fun">
+  <div class="container">
+    <h2>For Fun</h2>
+    <p><b>Play some of the games I created!</b></p>
+    <div id="pretty-colors">
+      <h3><%= link_to "Go Man Go!", fun_go_man_go_path, :class => "text-container-three" %></h3>
+      <div class="row">
+        <div class="col-md-5">
+          <%= link_to image_tag("fun/gomango.png", width: "100%", :class => "fun-image"), fun_go_man_go_path %>
+        </div>
+        <div class="col-md-7">
+          <p class="text-container-three">Everyone can count, but can your eyes keep up? Keep track of the characters zooming by on the screen. Watch for your objective, and stay sharp!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Rand back for fun page -->
+<%= javascript_include_tag 'rand_back' %>

@@ -1,0 +1,53 @@
+<% provide(:title, "Go Man Go") %>
+
+<!-- <link href="assets/easeljs/_assets/css/shared.css" rel="stylesheet" type="text/css"/>
+<link href="assets/easeljs/_assets/css/examples.css" rel="stylesheet" type="text/css"/>
+<script src="assets/easeljs/_assets/js/examples.js"></script>
+
+<script src="assets/easeljs/_assets/libs/preloadjs-NEXT.min.js"></script>
+
+<script src="assets/easeljs/lib/easeljs-NEXT.combined.js"></script> -->
+
+<%= stylesheet_link_tag 'easelcss/examples' %>
+
+<%= javascript_include_tag 'https://code.createjs.com/createjs-2015.11.26.min.js' %>
+<%= javascript_include_tag 'easeljs/examples' %>
+<%= javascript_include_tag 'easeljs/go-man-go' %>
+
+<div class="page-go-man-go">
+  <div id="gomango" class="container">
+    <div>
+      <h2>Go Man Go! Click to Count!</h2>
+      <!-- <p>
+        An example of defining a <code>SpriteSheet</code>, then displaying it
+        using <code>Sprite</code>. This demo also shows playing named
+        animations (jump and run), setting animation speed, chaining animations,
+        and using <code>Sprite.gotoAndPlay()</code>.
+        Click the stage to initialize a jump, which will continue back into the
+        run when it is complete.
+      </p>
+      <p>
+        <strong>Note:</strong> Some browsers can not load images or access pixel
+        data when running local files, and may throw a security error or not
+        work unless the content is running on a server.
+      </p> -->
+      <div id="score" style="font-size: 17.699px">Score: 0</div>
+      <div><p id="highscore">High Score: 0</p></div>
+      <div>
+        <canvas id="testCanvas" width="0" height="0"></canvas>
+      </div>
+      <div style="margin-top: 5px">
+        <p><b>How to Play:</b></p>
+        <p style="margin-top: -8px">This is a counting game. Before each round, an image appears telling you which character to keep track of. Click or tap anywhere on the screen when your character shows up. At the end of the round, you get points based on how close your count was to the actual number of times your character showed up. Increase your score by getting through consecutive rounds without badly miscounting. There are 5 different characters you can count, and one option where you must count ALL the characters that show up on screen.</p>
+      </div>
+      <div style="margin-top: -8px">
+        <p><b>Credits:</b></p>
+        <p style="margin-top: -8px">This game is adapted from the EaselJS example found <a href="http://www.createjs.com/demos/easeljs/spritesheet" target="_blank">here</a>.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    begin();
+</script>
